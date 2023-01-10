@@ -1,4 +1,4 @@
-module github.com/edin93/holbertonschool-validation/module1_task0
+module github.com/edin93/holbertonschool-validation
 
 go 1.19
 
