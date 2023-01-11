@@ -9,6 +9,8 @@ build:
 	echo "theme = 'ananke'" >> config.toml
 	echo "publishDir = 'dist'" >> config.toml
 	hugo > /dev/null 2>&1
+	hugo new posts/welcome.md
+	sed -i 's/title:.*/title: "Welcome to Awesome Inc."/g' ./content/posts/welcome.md
 clean:
 	rm  ./dist/*
 	rm -rf ./dist/
