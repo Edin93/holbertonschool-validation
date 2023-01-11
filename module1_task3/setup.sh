@@ -1,2 +1,4 @@
 #!/bin/bash
-apt-get update && apt-get install -y hugo make
+sudo apt-get update -y
+sudo apt-get install -y hugo
+sudo apt-get install -y make
