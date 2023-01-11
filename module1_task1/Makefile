@@ -1,16 +1,5 @@
 build:
-	hugo new site ./ --force
-	wget https://github.com/theNewDynamic/gohugo-theme-ananke/archive/refs/heads/master.zip
-	unzip master.zip
-	mv gohugo-theme-ananke-master/ ananke
-	rm master.zip
-	mv ananke ./themes/
-	sed -i "s/title.*/title = 'Awesome Inc.'/g" config.toml
-	echo "theme = 'ananke'" >> config.toml
-	echo "publishDir = 'dist'" >> config.toml
 	hugo > /dev/null 2>&1
-	hugo new posts/welcome.md
-	sed -i 's/title:.*/title: "Welcome to Awesome Inc."/g' ./content/posts/welcome.md
 clean:
 	rm  ./dist/*
 	rm -rf ./dist/
